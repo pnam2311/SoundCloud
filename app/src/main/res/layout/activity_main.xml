@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/album_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.framgia.soundcloud.ui.activity.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+        </LinearLayout>
+
+        <fragment
+            android:layout_weight="1"
+            android:id="@+id/player_fragment"
+            android:name="com.framgia.soundcloud.ui.fragment.PlayerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            tools:layout="@layout/fragment_player"/>
+</LinearLayout>
+
